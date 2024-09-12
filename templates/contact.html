@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="contact-section">
+    <h1>Contact Me</h1>
+    <p>You can reach me via the following channels:</p>
+    
+    <ul class="contact-info">
+        <li><strong>Email:</strong> <a href="mailto:vaidik.pandey@example.com">vaidik.pandey@example.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vaidik-pandey" target="_blank">linkedin.com/in/vaidik-pandey</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/TanmayAt" target="_blank">github.com/vaidikpandey</a></li>
+    </ul>
+
+    <p>Feel free to reach out for collaborations, job opportunities, or any questions you might have!</p>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form method="POST" action="/send-message">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

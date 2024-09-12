@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="projects-section">
+    <h1>My Projects</h1>
+    <div class="projects-grid">
+        <!-- Chat Moderation System -->
+        <div class="project-card">
+            <h2>Chat Moderation System</h2>
+            <p><strong>Summary:</strong> Built a system for text moderation, deployed on AWS EC2 with REST API integration, and achieved a latency of 5 seconds.</p>
+            <p><strong>Results:</strong> Achieved 90% accuracy in user chat categorization and successfully blocked abusive comments.</p>
+            <p><strong>Implementation:</strong> Implemented MNB classifier and ensemble voting, resulting in 0.9 accuracy and 0.85 precision.</p>
+            <a href="#">View Source Code</a>
+        </div>
+
+        <!-- Financial Fraud Detection -->
+        <div class="project-card">
+            <h2>Financial Fraud Detection System</h2>
+            <p><strong>Summary:</strong> Developed a fraud detection system using Enhanced CDR analysis and spam classification, deployed on AWS EC2.</p>
+            <p><strong>Results:</strong> Achieved 85% accuracy in categorizing fraudulent messages and enhanced security.</p>
+            <p><strong>Implementation:</strong> Utilized machine learning techniques and spam filtering for fraud detection.</p>
+            <a href="#">View Source Code</a>
+        </div>
+
+        <!-- Your Analytical Friend -->
+        <div class="project-card">
+            <h2>Your Analytical Friend</h2>
+            <p><strong>Summary:</strong> Developed an analytical tool supporting various chart types and model training in less than 10 seconds.</p>
+            <p><strong>Features:</strong> Handled input files up to 200 MB (CSV and JSON) and provided downloadable analytics and models in bin, pkl, or tf formats.</p>
+            <p><strong>Deployment:</strong> Deployed on a cloud platform to offer real-time analytics.</p>
+            <a href="#">View Source Code</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
